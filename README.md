@@ -53,9 +53,7 @@ The design follows [picoquic-ns3](https://gitlab.com/nitk8030113/picoquic-ns3) (
 ## Requirements
 
 - Linux. Developed on Ubuntu under WSL2. Other distributions should work but are untested.
-- About 8 GB of RAM. NSS is compiled from source on the first build, and low memory makes it slow or fails it.
 - Disk: about 3 GB for the bridge build, plus the usual space for an ns-3 build.
-- Time: the first build of the bridge takes **15 to 30 minutes** (it compiles NSS and NSPR).
 
 **WSL2 users**
 
