@@ -1,0 +1,13 @@
+[package]
+name = "neqo-ns3-bridge"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+neqo-transport = { path = "../../../third-party/neqo/neqo-transport" }
+neqo-common = { path = "../../../third-party/neqo/neqo-common" }
+test-fixture = { path = "../../../third-party/neqo/test-fixture" }
+nss = { version = "0.16", package = "nss-rs", git = "https://github.com/mozilla/nss-rs" }

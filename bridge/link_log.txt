@@ -1,0 +1,19 @@
+   Compiling neqo-ns3-bridge v0.1.0 (/home/pranav/neqo-ns3-bridge)
+error: linking with `cc` failed: exit status: 1
+  |
+  = note:  "cc" "-m64" "/home/pranav/neqo-ns3-bridge/target/debug/deps/rustcZ1PqAg/symbols.o" "<35 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/lib/{libtest-*,libgetopts-*,librustc_std_workspace_std-*}.rlib" "/home/pranav/neqo-ns3-bridge/target/debug/deps/{libtest_fixture-92edf0f6e6d27927,libtest_fixture-2b848cba0469dc9b,libneqo_http3-0706505e55426416,libhttp-458b9e28369ba08a,libbytes-5ac4c588f5f6988b,libsfv-3d3460cf060ae102,libref_cast-1744ed780191a5e7,libbase64-ee100958bdc4c744,libneqo_qpack-72210b67d8863d8d,libneqo_transport-ac4924a89655d8d2,libmtu-f78e4e46cfabcc07,liblibc-b393766cf300f54e,libenumset-0c8a32e3699ff91b,libsmallvec-5ea308a69cf0fdb5,librustc_hash-8625b8e2bc51c8e8,libnss_rs-afdc344e5be25cd0,libderive_more-ddd96b4f4d365cb2,libzeroize-9693efcf201f83d3,libneqo_common-b089398ed5fd9681,libstrum-2af866d4bcbb8210,libenum_map-0db11f7b655984d5,libqlog-fed9ad2a5f2b10d7,libserde_json-885ed5822aae2408,libmemchr-3986fad8fbc88162,libitoa-a3fbf3f422d93242,libzmij-f6406a5dd51c30d1,libindexmap-2cb1a7e7b9279277,libequivalent-d6bf0d4cc003f39b,libhashbrown-d168afce0a7fa32b,libhumantime-fda7af823f4888dd,libserde_with-b631f2faf56fa745,libserde-1502ea5d60b9adeb,libserde_core-c315f8adcc0781da,libtracing_subscriber-35b418090f1e8678,libthread_local-398d2ed07b763113,libcfg_if-54f94f1584400e23,libsharded_slab-5d1e143686b5541a,liblazy_static-09c1dfee4d3b23fa,libtracing_log-ae61caa0c9096c1b,liblog-0614a00567984978,libtracing-b537bce518deb5e4,libpin_project_lite-7a9603a29e208fdf,libtracing_core-e9a17d5c33518462,libonce_cell-3b91e9b615e6cae7,libthiserror-ee55a5f962c27180}.rlib" "<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libcfg_if-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lc" "-lm" "-lrt" "-lpthread" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/home/pranav/neqo-ns3-bridge/target/debug/deps/rustcZ1PqAg/raw-dylibs" "-B<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/bin/gcc-ld" "-fuse-ld=lld" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "/home/pranav/neqo-ns3-bridge/target/debug/build/nss-rs-0a054d7838631083/out/dist/Release/lib" "-L" "<sysroot>/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-o" "/home/pranav/neqo-ns3-bridge/target/debug/deps/neqo_ns3_bridge-ca46d7268d03ea28" "-Wl,--gc-sections" "-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: rust-lld: error: undefined symbol: mozilla::pkix::FindSubjectPublicKeyInfo(mozilla::pkix::Input, mozilla::pkix::Input&)
+          >>> referenced by mozpkixwrappers.cpp
+          >>>               ssl.mozpkixwrappers.o:(ssl_ExtractSPKIFromDER) in archive /home/pranav/neqo-ns3-bridge/target/debug/deps/libnss_rs-afdc344e5be25cd0.rlib
+          
+          rust-lld: error: undefined symbol: mozilla::pkix::MapResultToPRErrorCode(mozilla::pkix::Result)
+          >>> referenced by mozpkixwrappers.cpp
+          >>>               ssl.mozpkixwrappers.o:(ssl_ExtractSPKIFromDER) in archive /home/pranav/neqo-ns3-bridge/target/debug/deps/libnss_rs-afdc344e5be25cd0.rlib
+          >>> referenced by mozpkixwrappers.cpp
+          >>>               ssl.mozpkixwrappers.o:(ssl_ExtractSPKIFromDER) in archive /home/pranav/neqo-ns3-bridge/target/debug/deps/libnss_rs-afdc344e5be25cd0.rlib
+          collect2: error: ld returned 1 exit status
+          
+
+error: could not compile `neqo-ns3-bridge` (lib test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

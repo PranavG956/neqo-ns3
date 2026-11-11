@@ -1,0 +1,13 @@
+# Rust build output (several GB once NSS is built)
+bridge/target/
+
+# scratch binaries and objects
+bridge/test_handshake
+bridge/neqo-udp-peer
+*.o
+
+# simulation output
+*.pcap
+*.qlog
+*.sqlog
+__pycache__/
