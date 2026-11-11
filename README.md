@@ -21,4 +21,5 @@ git -C third-party/neqo checkout <NEQO_COMMIT>
 cd contrib/neqo/bridge && NSS_NO_PKG_CONFIG=1 cargo build # first build compiles NSS: 15-30 min
 cd ../../.. && ./ns3 configure --enable-examples
 ./ns3 run neqo-basic
-Requires neqo's NSS build tools (mercurial, gyp, ninja, clang, zlib) and Rust.
+
+Requires neqo's NSS build tools (mercurial, gyp, ninja, clang, zlib) and Rust
