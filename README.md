@@ -154,7 +154,7 @@ You may see this warning during the first build:
 warning: neqo-ns3-bridge@0.1.0: libmozpkix.a not found; NSS not built yet?
 ```
 
-It appears because `build.rs` runs before NSS has finished. If it is still there once the build completes, or if linking later fails with `undefined symbol: mozilla::pkix`, run `touch build.rs` and build again (see [Troubleshooting](#troubleshooting)).
+This happens because `build.rs` runs before NSS has finished building. If it remains after the build completes, or if linking later fails with `undefined symbol: mozilla::pkix`, run `touch build.rs` and rebuild (see [Troubleshooting](#troubleshooting)).
 
 Optional check that the bridge works on its own (a full handshake and a 200 KB transfer, through the C API):
 
